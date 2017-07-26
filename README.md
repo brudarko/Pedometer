@@ -2,7 +2,7 @@
 
 # Projeto #1
 Manutenção de vida saúdavel.
-Dados recolhidos: Contagem de passos, distância percorrida, queima de calorias, temperatura e umidade.
+- Dados recolhidos: Contagem de passos, distância percorrida, queima de calorias, temperatura e umidade.
 
 Este projeto foi designado para concorrer na feira do conhecimento municipal, realizada em Chapecó/SC.
 
