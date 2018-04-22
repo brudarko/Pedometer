@@ -1,9 +1,10 @@
 // Frank, the living dead, made this code. 
 // Chapecó, Brazil
-// 2017
+// This was my first project in 2017, for a science fair.
+// 2018
 
 
-// Partes deste código foram produzidos através de exemplos dados por:
+// Thanks to:
 // Adafruit
 // Intel
 // Filipeflop
@@ -19,13 +20,13 @@
 #define DHTPIN 8
 #define DHTTYPE DHT11  
 
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(12,10,5,4,3,2);
 
 int state=LOW;
 int lastState=LOW;
 const int ledPin = 13;
 boolean stepEventsEnabeled = true;
-long lastStepCount = 0; // Último passo detectado
+long lastStepCount = 0; 
 boolean blinkState = false;    
 float comprimento_do_passo;
 float calories = 0;
@@ -46,42 +47,39 @@ void setup() {
   lcd.begin(16, 2);
   dht.begin();
 
-  comprimento_do_passo=0.30*altura; // Altura em centímetros
-  calories_lost_per_km=(0.57*peso*1.6)/0.453; // Peso em kilogramas
+  comprimento_do_passo=0.30*altura; // Height in cm
+  calories_lost_per_km=(0.57*peso*1.6)/0.453; // Weight in kg
   passos_por_milha = 160000.0/comprimento_do_passo; // 16000.0 CM = 16 KM
 
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Proj. Bem-estar");
+  lcd.print("Pedometer");
   lcd.setCursor(0, 1);
-  lcd.print("07/2017");
+  lcd.print("Made by Frank :P");
   delay(3000);
   
   // pinMode(13, OUTPUT);
-  // Iniciar o sensor: 
   CurieIMU.begin();
-  // Modo de detecção de passos:
   CurieIMU.setStepDetectionMode(CURIE_IMU_STEP_MODE_NORMAL);
-  // Ativar contagem de passos:
   CurieIMU.setStepCountEnabled(true);
 
   if (stepEventsEnabeled) {
     // attach the eventCallback function as the
     // step event handler:
     CurieIMU.attachInterrupt(eventCallback);
-    CurieIMU.interrupts(CURIE_IMU_STEP);  // Detecção de passos
+    CurieIMU.interrupts(CURIE_IMU_STEP);  
   }
 
   
 }
 
 static void updateStepCount() {
-  // get the step count:
+  // Get the step count:
   int stepCount = CurieIMU.getStepCount();
 
-  // if the step count has changed, print it:
+  // If the step count has changed, print it:
   if (stepCount != lastStepCount) {
-    // save the current count for comparison next check:
+    // Save the current count for comparison next check:
     lastStepCount = stepCount;
   }
 }
@@ -94,7 +92,7 @@ static void eventCallback(void) {
 void loop() {
   
 
-  if (!stepEventsEnabeled) { // Detecção periódica
+  if (!stepEventsEnabeled) { 
     updateStepCount();
   }
   
@@ -102,7 +100,7 @@ void loop() {
 
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Passos: ");
+  lcd.print("Steps: ");
   lcd.setCursor(0, 1);
   lcd.print(lastStepCount);
   delay(4000);
@@ -117,7 +115,7 @@ if (option=='c') {
 
  lcd.clear();
  lcd.setCursor(0, 0);
- lcd.print("Calorias Q.: "); 
+ lcd.print("Calories B.: "); 
  lcd.setCursor(0, 1);
  lcd.print(calories_burned); 
  lcd.print(" Kcal");
@@ -125,7 +123,7 @@ if (option=='c') {
 
 //__________________________________//
 
-distance = (comprimento_do_passo*lastStepCount)/100; // Distância em metros.
+distance = (comprimento_do_passo*lastStepCount)/100; // Distance in meters
 
 if (option=='d') {
   
@@ -133,25 +131,25 @@ if (option=='d') {
 
 lcd.clear();
 lcd.setCursor(0, 0);
-lcd.print("Distancia P.: ");
+lcd.print("Distance: ");
 lcd.setCursor(0, 1);
 lcd.print(distance);
-lcd.print(" Metros");
+lcd.print(" Meters");
 delay(4000);
 
 //__________________________________//
-// CONEXÃO NO PINO 8
+// CONECTION IN PIN 8
 
   delay(delayMS);
   sensors_event_t event;  
   dht.temperature().getEvent(&event);
   if (isnan(event.temperature)) {
-    //Serial.println("Erro - Temp");
+    Serial.println("Error - Temp");
   }
   else {
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print("Temperatura: ");
+    lcd.print("Temperature: ");
     lcd.setCursor(0, 1);
     lcd.print(event.temperature);
     lcd.print(" C*");
@@ -160,12 +158,12 @@ delay(4000);
   
   dht.humidity().getEvent(&event);
   if (isnan(event.relative_humidity)) {
-    //Serial.println("Erro - Humi");
+    Serial.println("Error - Humi");
   }
   else {
     lcd.clear();
     lcd.setCursor(0, 0);
-    lcd.print("Humidade: ");
+    lcd.print("Humidity: ");
     lcd.setCursor(0, 1);
     lcd.print(event.relative_humidity);
     lcd.print("%");
@@ -179,4 +177,3 @@ delay(4000);
   blinkState = !blinkState;
   delay(300);
   
-}
