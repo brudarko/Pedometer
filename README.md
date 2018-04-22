@@ -1,5 +1,8 @@
 # Pedômetro
 
+# [Hackester.io Project](https://www.hackster.io/franktheliving/pedometer-ef494b) 
+You can found more info for this project on the like above. 
+
 # Projeto #1
 Manutenção de vida saúdavel.
 - Dados recolhidos: Contagem de passos, distância percorrida, queima de calorias, temperatura e umidade.
