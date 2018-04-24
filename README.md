@@ -1,4 +1,4 @@
-# Pedômetro
+# Pedometer (Arduino 101)
 
 # [Hackester.io Project](https://www.hackster.io/franktheliving/pedometer-ef494b) 
 You can found more info for this project on the like above. 
@@ -8,11 +8,11 @@ Manutenção de vida saúdavel.
 - Dados recolhidos: Contagem de passos, distância percorrida, queima de calorias, temperatura e umidade.
 
 Este projeto foi designado para concorrer na feira do conhecimento municipal, realizada em Chapecó/SC.
+(2017)
 
 Colaboração:
 
  - Escola de Educação Bás. Luiza Santin
- - Centro Associativo de Atividades Psicofísicas Patrick
 
 Materiais usados:
 
@@ -26,10 +26,3 @@ Materiais usados:
 
 "Every living creature dies alone on Earth"
                             - Roberta Sparrow
-
-
-
-
-
-
-
