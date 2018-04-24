@@ -1,4 +1,4 @@
-# Pedometer (Arduino 101)
+# Pedometer
 
 # [Hackester.io Project](https://www.hackster.io/franktheliving/pedometer-ef494b) 
 You can found more info for this project on the like above. 
