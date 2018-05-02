@@ -1,28 +1,27 @@
 # Pedometer
 
 # [Hackester.io Project](https://www.hackster.io/franktheliving/pedometer-ef494b) 
-You can found more info for this project on the like above. 
 
-# Projeto #1
-Manutenção de vida saúdavel.
-- Dados recolhidos: Contagem de passos, distância percorrida, queima de calorias, temperatura e umidade.
+# Idea
 
-Este projeto foi designado para concorrer na feira do conhecimento municipal, realizada em Chapecó/SC.
-(2017)
+![alt text](https://github.com/frankthedead/Pedometer/blob/master/2018-04-22%2016_52_40.gif)
 
-Colaboração:
+This project aimed to meet the requirements of the science fair that happened in my city last year, in which it was "My body, my world".
 
- - Escola de Educação Bás. Luiza Santin
+The main idea was to make a device that measures the physical performance of each individual, where the pedometer at each movement, verifies the distance traveled, the number of steps performed, the calories lost, the ambient temperature and humidity measurement.
 
-Materiais usados:
+![alt text](https://github.com/frankthedead/Pedometer/blob/master/FullSizeRender%202.jpg)
 
- - Arduino 101;
- - Sensor de temperatura;
- - Jump wires;
- - LCD 16x2;
- - Nan. Protoboard;
- - Bateria (9v);
- - Molde impresso.
+Most of the data collected comes properly from the board, since it has a library involving the collection of steps, and to determine the rest, I only use math.
 
-"Every living creature dies alone on Earth"
-                            - Roberta Sparrow
+The case was printed on a 3D printer. The pedometer is powered by a 9v battery.
+
+# Why?
+A significant portion of people live in a sedentary way, away from physical activity practices and healthy lifestyle habits.
+
+It is necessary to recognize physical activity as an important element for normal metabolic activities as well as reducing the risks of future diseases.
+
+With this conclusion, I made an prototype device that helps in this matter, collecting data that can be used and analyzed in a more detailed way.
+
+These data, when viewed, start to add to a stimulus to the practice of physical activities, since, the person can monitor their income, understand their body and improve their practice day after day.
+
