@@ -2,8 +2,6 @@
 
 # [Hackester.io Project](https://www.hackster.io/franktheliving/pedometer-ef494b) 
 
-# Idea
-
 ![alt text](https://github.com/frankthedead/Pedometer/blob/master/2018-04-22%2016_52_40.gif)
 
 This project aimed to meet the requirements of the science fair that happened in my city last year, in which it was "My body, my world".
