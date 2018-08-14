@@ -25,4 +25,4 @@ These data, when viewed, start to add to a stimulus to the practice of physical 
 
 # This project was created on:
 
-![alt text](https://github.com/frankthedead/Pedometer/blob/master/download.png =250x250)
+![alt text](https://github.com/frankthedead/Pedometer/blob/master/Desbravalley.png)
