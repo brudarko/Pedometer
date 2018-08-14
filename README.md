@@ -23,3 +23,6 @@ With this conclusion, I made an prototype device that helps in this matter, coll
 
 These data, when viewed, start to add to a stimulus to the practice of physical activities, since, the person can monitor their income, understand their body and improve their practice day after day.
 
+This project was created on:
+
+![alt text](https://github.com/frankthedead/Pedometer/blob/master/download.png)
